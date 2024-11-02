@@ -1,4 +1,6 @@
+# 运行 sudo docker build -t personal-page-frontend .
 # 使用 Node.js 作为基础镜像
+
 FROM node:18-alpine AS builder
 
 # 安装 git 和其他工具
@@ -10,6 +12,9 @@ WORKDIR /app
 # 复制 package.json 和 lock 文件并安装依赖
 COPY package.json package-lock.json* ./
 RUN npm install
+
+# 设置 Node.js 内存限制为 4GB
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 
 # 复制代码并构建项目
 COPY . .
