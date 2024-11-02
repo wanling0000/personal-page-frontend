@@ -147,7 +147,7 @@ onMounted(() => {
   setCss(dayNight === "day");
 });
 
-const toggleTheme = () => {
+const _toggleTheme = () => {
   theme.value = theme.value === 'dark' ? 'light' : 'dark';
   localStorage.setItem("dayOrNight", theme.value === 'light' ? 'day' : 'night');
   setCss(theme.value === 'light');

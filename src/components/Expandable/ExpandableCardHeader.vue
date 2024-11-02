@@ -14,7 +14,7 @@
 import { ref, defineProps } from 'vue';
 
 // Using defineProps and destructure properties
-const { className } = defineProps<{
+const { className: _className } = defineProps<{
   className?: string;
   [key: string]: any;
 }>();
