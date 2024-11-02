@@ -7,11 +7,17 @@ import 'element-plus/dist/index.css'
 import '@/assets/css/message.css';
 import App from '@/App.vue';
 import router from '@/router/index.ts';
+import './index.css';
+import Vue3Marquee from 'vue3-marquee';
+import { MotionPlugin } from '@vueuse/motion'
 
 const app = createApp(App);
 
+
 // 注册路由
 app.use(router);
+app.use(Vue3Marquee);
+app.use(MotionPlugin)
 
 // element-plus
 app.use(ElementPlus);

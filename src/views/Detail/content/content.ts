@@ -33,7 +33,7 @@ export const pm = `
 1. Collaborated closely with cross-functional teams (developers, testers, designers) to improve B2B AI product design and functionality, including product roadmapping, test case development, and issue resolution.
 2. Conducted research on integrating open-source multimodal models, like LLaVA, into existing products. Contributed to creating and maintaining automated testing scripts within a Linux environment.
 3. Used Python (Pandas, NumPy) for data analysis to identify potential issues and optimize performance.
-
-## Projects Involved
-1
+//
+// ## Projects Involved
+// 1
 `;
