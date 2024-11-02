@@ -9,8 +9,8 @@
     "start": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "yarn build", // 运行构建之前会先运行这个脚本
-    "deploy": "gh-pages -d dist" // 使用 gh-pages 部署 dist 目录
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vueuse/motion": "^2.2.6",
