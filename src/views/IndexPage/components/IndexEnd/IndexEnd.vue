@@ -66,7 +66,7 @@ onUnmounted(() => {
 			<p class="end-author">-- By Wanling</p>
 			<div class="end-text-container" ref="circle">
 				<img
-					src="public/img/青紫のエイリアン.png"
+					src="../../../../../public/img/me.png"
 					alt="HIT"
 				/>
 			</div>

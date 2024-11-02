@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps, emit } from 'vue';
+import { ref, defineProps} from 'vue';
 
 const props = defineProps({
   isExpanded: Boolean,

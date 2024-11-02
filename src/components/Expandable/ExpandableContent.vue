@@ -27,8 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, onMounted, nextTick, inject, Ref } from 'vue';
-import { useMotion } from '@vueuse/motion';
+import { ref, computed, onMounted, nextTick, inject, Ref } from 'vue';
 
 // 定义 props
 const props = defineProps({

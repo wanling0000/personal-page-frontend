@@ -112,7 +112,6 @@ import { ref, onMounted } from "vue";
 import PartTitle from "@/components/PartTitle/PartTitle.vue";
 import titleAndPath from "@/config/TitleAndPath";
 import ExpandableCard from "@/components/Expandable/ExpandableCard.vue";
-import { MotionPlugin } from "@vueuse/motion";
 import setCss from "@/tools/setCss.ts";
 
 const projectList = ref<HTMLElement | null>(null);

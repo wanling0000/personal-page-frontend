@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import { ref, provide, watch, computed } from 'vue';
-import { useMotion } from '@vueuse/motion';
+
 
 const props = defineProps({
   expanded: {
