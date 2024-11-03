@@ -1,6 +1,4 @@
-# 运行 sudo docker build -t personal-page-frontend .
 # 使用 Node.js 作为基础镜像
-
 FROM node:18-alpine AS builder
 
 # 安装 git 和其他工具
@@ -22,6 +20,9 @@ RUN npm run build
 
 # 使用 Nginx 作为生产服务器
 FROM nginx:alpine
+
+# 拷贝自定义的 Nginx 配置文件到容器中
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # 复制构建后的静态文件到 Nginx 的 HTML 目录
 COPY --from=builder /app/dist /usr/share/nginx/html
