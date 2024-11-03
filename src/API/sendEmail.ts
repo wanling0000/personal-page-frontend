@@ -6,7 +6,7 @@ export default function sendEmail(data: {
 	message: string;
 }) {
 	return request({
-		url: `/api/sendemail`,
+		url: `http://34.251.157.179:7921/sendemail`,
 		method: "POST",
 		data,
 	});
